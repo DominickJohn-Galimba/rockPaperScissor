@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            background-color: #89687D;
+        }
+        .score {
+            display: flex;
+            justify-content: center;
+            gap: 5em;
+            font-size: x-large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            
+        }
+        .buttonList {
+            display: flex;
+            margin-top: 50px;
+            gap: 3em;
+            justify-content: center;
+            color: #FCD8CC;
+        }
+        #welcome {
+            text-align: center;
+            font-size: 50px;
+            font-family:Impact, 'Arial Narrow Bold', sans-serif;
+            color:#0C5446;
+            margin-top: 2em;
+            display: none;
+
+        }
+        .newGame {
+            margin-left: 46.5%;
+            margin-right: 10%;
+            margin-top: 1%;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+
+        button {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: #A7E0E9;
+            color: #c05f3e;
+            font-size: larger;
+            font-weight: 700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-shadow: 10px 10px 10px #0b0505;
+        }
+        span {
+            margin-left: 1em;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class = "score">
+                <p>Player :<span id="win"> 0</span></p>
+                <p>Computer :<span id="lose"> 0</span></p>
+                <p>Tie :<span id="tie"> 0</span></p>
+            </div>
+        </section>
+        <div id="welcome">Welcome! Click the button to start the game</div>
+        <div id = "result"></div>
+        <h2 id = "textDisplay"></h2>
+        <section>
+            <div class="buttonList">
+                <button id="Rock" disabled>Rock </button>
+                <button id="Paper" disabled>Paper</button>
+                <button id="Scissor" disabled>Scissor</button>
+            </div>
+        </section>
+        <button class = "newGame">New Game</button>
+        <script src = "rockPaperScissor.js"></script>
+        </script>
+    </main>
+</body>
+</html>
